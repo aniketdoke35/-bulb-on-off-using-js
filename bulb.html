@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        background-color: rgba(2, 36, 68, 0.973);
+    }
+    .main{
+        margin: 0 auto;
+        height: 200px;
+        width:500px;
+    }
+
+    h1{
+          text-align: center;
+          color: white;
+          font-size: 30px;
+          padding-top: 30px;
+    }
+    button{
+        background-color: rgba(255, 196, 0, 0.911);
+        height: 50px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 9px;
+        cursor: pointer;
+        width: 130px;
+    }
+
+    button:hover{
+        background-color: black;
+        box-shadow: 20px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<body>
+    <div class="main">
+        <h1>Can you turn the light on ?</h1>
+
+        <button onclick="document.getElementById('myImage').src='lighton-removebg-preview.png'">light on</button>
+        <img src="lightoff-removebg-preview.png" alt="lightoff-pic" id="myImage">
+        <button onclick="document.getElementById('myImage').src='lightoff-removebg-preview.png'">light off</button>
+    </div>
+</body>
+</html>
